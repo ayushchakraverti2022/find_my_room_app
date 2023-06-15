@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "565300167400",
+    "project_id": "roomfindingproject",
+    "storage_bucket": "roomfindingproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565300167400:android:80bc259abc2dde7054ff5d",
+        "android_client_info": {
+          "package_name": "com.example.findmyroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565300167400-n6iunodsh1uhveaiuib313rc2rvi8kfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA63I7TDW7Xwb5QmvRDrBbT_LrfgP3opfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565300167400-n6iunodsh1uhveaiuib313rc2rvi8kfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

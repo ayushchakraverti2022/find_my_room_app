@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_550mdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/_5mdp"
+        android:elevation="@dimen/_11mdp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="match_parent">
+
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/addnewroomimageview"
+
+        app:radius="@dimen/_5mdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/loginscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

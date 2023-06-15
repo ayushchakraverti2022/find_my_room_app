@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationItemMenu.AddNewRoomActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_8mdp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/renttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBC02D"
+        android:elevation="@dimen/_11mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_177mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/add_new_room_recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5mdp"
+                    android:orientation="horizontal">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <com.appbroker.roundedimageview.RoundedImageView
+                android:id="@+id/add_new_room_button"
+                android:layout_width="@dimen/_45mdp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1AFAC02D"
+                android:src="@drawable/image_24"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:radius="@dimen/_5mdp">
+
+            </com.appbroker.roundedimageview.RoundedImageView>
+
+            <com.appbroker.roundedimageview.RoundedImageView
+                android:id="@+id/remove_new_room_button"
+                android:layout_width="@dimen/_45mdp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1AFAC02D"
+                android:src="@drawable/delete_24"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:radius="@dimen/_5mdp">
+
+            </com.appbroker.roundedimageview.RoundedImageView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_room_button"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5mdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_5mdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_5mdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_5mdp"
+                    app:boxCornerRadiusTopStart="@dimen/_5mdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter state"
+                        android:inputType="text"
+                        android:textSize="@dimen/_15mdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5mdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_5mdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_5mdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_5mdp"
+                    app:boxCornerRadiusTopStart="@dimen/_5mdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter city"
+                        android:inputType="text"
+                        android:textSize="@dimen/_15mdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5mdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_5mdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_5mdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_5mdp"
+                    app:boxCornerRadiusTopStart="@dimen/_5mdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter landmark"
+                        android:inputType="text"
+                        android:textSize="@dimen/_15mdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5mdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_5mdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_5mdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_5mdp"
+                    app:boxCornerRadiusTopStart="@dimen/_5mdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_locality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter locality"
+                        android:inputType="text"
+                        android:textSize="@dimen/_15mdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5mdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_5mdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_5mdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_5mdp"
+                    app:boxCornerRadiusTopStart="@dimen/_5mdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter price"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/_15mdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <Button
+                    android:id="@+id/roomsavebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15mdp"
+                    android:layout_marginBottom="@dimen/_15mdp"
+                    android:text="save" />
+
+
+            </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

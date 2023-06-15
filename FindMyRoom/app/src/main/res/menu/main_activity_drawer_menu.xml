@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <group >
+
+            <item android:id="@+id/add_rooms"
+                android:icon="@drawable/rooms_24"
+                android:title="Rent New rooms"
+                />
+
+            <item android:id="@+id/your_rooms"
+                android:title="Your rooms"
+                android:icon="@drawable/your_room_24"
+                />
+
+            <item android:id="@+id/liked_rooms"
+                android:title="Liked Rooms"
+                android:icon="@drawable/like_star__24"
+                />
+            <item android:id="@+id/contact"
+                android:title="Contact"
+                android:icon="@drawable/contact_phone_24"
+                />
+
+
+      </group>
+
+            <item android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/logout_24"/>
+
+
+</menu>
